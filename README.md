@@ -69,3 +69,11 @@ http://localhost:8888/auth/realms/master/account/
 
 ---
 Work in progress ...
+
+## PKCE
+
+PKCE Authorization Code Flow
+- Created for public facing clients
+  - Web applications developed using Angular, React, Vue, ...
+  - Mobile applications
+- Considered a best practice
