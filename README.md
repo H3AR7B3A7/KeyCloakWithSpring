@@ -66,3 +66,6 @@ http://localhost:8888/auth/realms/overworld/account
 Login page for admin user:
 
 http://localhost:8888/auth/realms/master/account/
+
+---
+Work in progress ...
