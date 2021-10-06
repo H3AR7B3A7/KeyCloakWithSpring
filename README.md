@@ -57,6 +57,11 @@ Valid Redirect URIs: http://localhost:8080/login/oauth2/code/first-keycloak-clie
 
 *Get the client secret from the credentials tab.*
 
+To enable fine-grained authorization support:
+- Toggle **Authorization Enabled**
+- A tab named **Authorization** will appear
+
+
 ## Log In
 
 Login page for overworld user:
