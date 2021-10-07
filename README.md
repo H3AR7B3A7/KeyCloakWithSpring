@@ -74,9 +74,9 @@ http://localhost:8888/auth/realms/master/account/
 
 ## Some Projects
 
-- [Front-End OAuth2 Client Implementation](first-attempt/README.md)
-- [Front-End KeyCloak Implementation](second-attempt/README.md)
-- [REST-Service Oauth2 Implementation](third-attempt/README.md)
+- [OpenID Connect (+ Thymeleaf)](first-attempt/README.md)
+- [SAML ???](second-attempt/README.md)
+- [OpenID Connect (REST Service)](third-attempt/README.md)
 
 
 ---
