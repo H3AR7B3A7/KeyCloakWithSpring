@@ -72,9 +72,6 @@ Login page for admin user:
 
 http://localhost:8888/auth/realms/master/account/
 
----
-Work in progress ...
-
 ## PKCE
 
 PKCE Authorization Code Flow
@@ -82,3 +79,9 @@ PKCE Authorization Code Flow
   - Web applications developed using Angular, React, Vue, ...
   - Mobile applications
 - Considered a best practice
+
+---
+Work in progress ...
+
+### Valid Redirect ???
+http://localhost:8080/login/oauth2/code/first-keycloak-client
