@@ -17,22 +17,30 @@ public class SomeAPIController {
     }
 
     @GetMapping("/tools")
-//    @PreAuthorize("hasAnyAuthority('ROLE_USER')")
+    @PreAuthorize("hasAuthority('ROLE_Explorer')")
     public @ResponseBody
     List<Model> getTools() {
         return List.of(new Model(1, "pickaxe"), new Model(2, "shovel"), new Model(3, "torch"));
     }
     
     @GetMapping("/swords")
-    @PreAuthorize("hasPermission(null, 'swords')")
+    @PreAuthorize("hasPermission('Swords', 'swords-read')")
     public @ResponseBody
     List<Model> getSwords() {
         return List.of(new Model(1, "1H sword"), new Model(2, "2H sword"));
     }
     
     @GetMapping("/armor")
-    @PreAuthorize("hasRole('Fighter')")
+    @PreAuthorize("hasRole('ROLE_Fighter')")
     public @ResponseBody List<Model> getArmors() {
         return List.of(new Model(1, "Leather Armor"), new Model(2, "Iron Armor"), new Model(3, "Diamond Armor"));
     }
+
+    @GetMapping("/diamond_kit")
+    @PreAuthorize("hasPermission(null, 'Diamond')")
+    public @ResponseBody
+    List<Model> getDiamondKit() {
+        return List.of(new Model(1, "Diamond Pick"), new Model(2, "Diamond Armor"));
+    }
+
 }
