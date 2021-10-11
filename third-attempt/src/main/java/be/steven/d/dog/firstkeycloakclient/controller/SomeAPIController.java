@@ -29,4 +29,10 @@ public class SomeAPIController {
     List<Model> getSwords() {
         return List.of(new Model(1, "1H sword"), new Model(2, "2H sword"));
     }
+    
+    @GetMapping("/armor")
+    @PreAuthorize("hasRole('Fighter')")
+    public @ResponseBody List<Model> getArmors() {
+        return List.of(new Model(1, "Leather Armor"), new Model(2, "Iron Armor"), new Model(3, "Diamond Armor"));
+    }
 }
